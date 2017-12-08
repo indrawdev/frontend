@@ -7,9 +7,9 @@
     <meta name="description" content="<?php echo $this->template->description; ?>">
     <meta name="author" content="LABFUTSAL">
     <?php echo $this->template->meta; ?>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/assets/css/bootstrap-theme.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
     <?php echo $this->template->stylesheet; ?>
 </head>
 <body>
@@ -35,8 +35,8 @@
     </span>
   </div>
 </footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 <?php echo $this->template->javascript; ?>
 
 </body>
