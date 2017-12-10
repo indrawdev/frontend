@@ -6,5 +6,6 @@
 		<a href="<?php echo base_url(); ?>" class="item">Home</a>
 		<a href="<?php echo base_url('checkout'); ?>" class="item">Checkout</a>
 		<a href="<?php echo base_url('konfirmasi'); ?>" class="item">Konfirmasi</a>
+		<a href="<?php echo base_url('kontak'); ?>" class="item">Kontak</a>
 	</div>
 </div>

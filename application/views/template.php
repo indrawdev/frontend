@@ -57,8 +57,8 @@
                 </div>
             </div>
             <div class="seven wide column">
-                <h4 class="ui inverted header">Footer Header</h4>
-                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                <h4 class="ui inverted header">LABFUTSAL.com</h4>
+                <p>Gedung Wisma Bakri, Jl. Rasuna Said (Kuningan) - Jakarta Selatan</p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>

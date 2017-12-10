@@ -53,6 +53,7 @@ class Billing extends CI_Controller {
 		);
 		$this->db->insert('tm_pelanggan', $pelanggan);
 		$this->session->set_flashdata('order', $kode);
+		$this->cart->destroy();
 		redirect('order', 'refresh');
 	}
 
