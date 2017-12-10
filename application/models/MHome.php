@@ -12,7 +12,7 @@ class MHome extends CI_Model
 	public function getLapanganAll()
 	{
 		$xSQL = ("
-			SELECT DISTINCT a.fs_kode_lapangan, a.fs_nama_lapangan, b.fs_nama_photo, b.fs_photo_lapangan
+			SELECT DISTINCT a.fs_kode_lapangan, a.fs_nama_lapangan, b.fs_nama_photo, b.fs_photo_lapangan, a.fs_keterangan_lapangan
 			FROM tm_lapangan a
 			LEFT JOIN tm_photo_lapangan b ON b.fs_kode_lapangan = a.fs_kode_lapangan
 		");

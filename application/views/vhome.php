@@ -1,12 +1,22 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<div class="row">
+<div class="ui items">
 	<?php foreach ($lapangan->result() as $val) : ?>
-	<div class="col-md-3">
-		<img src="<?php echo 'http://localhost/labfutsal/uploads/' . $val->fs_photo_lapangan; ?>" class="img-responsive img-thumbnail" />
-		<p><?php echo $val->fs_nama_lapangan; ?></p>
-		<input type="hidden" name="fs_kode_lapangan" value="<?php echo $val->fs_kode_lapangan; ?>" />
-		<input type="hidden" name="fs_nama_lapangan" value="<?php echo $val->fs_nama_lapangan; ?>" />
-		<a class="btn btn-success" href="<?php echo base_url("lapangan/detail/".$val->fs_kode_lapangan.""); ?>">Booking</a>
+	<div class="item">
+		<div class="image">
+			<img src="<?php echo 'http://localhost/labfutsal/uploads/' . $val->fs_photo_lapangan; ?>">
+		</div>
+		<div class="content">
+			<a class="header"><?php echo $val->fs_nama_lapangan; ?></a>
+			<div class="meta">
+				<span>Description</span>
+			</div>
+			<div class="description">
+				<p><?php echo $val->fs_keterangan_lapangan; ?></p>
+			</div>
+			<div class="extra">
+				<a href="<?php echo base_url() . 'lapangan/detail/' . $val->fs_kode_lapangan; ?>" class="ui primary button">Booking</a>
+			</div>
+		</div>
 	</div>
 	<?php endforeach; ?>
 </div>

@@ -7,8 +7,7 @@
     <meta name="description" content="<?php echo $this->template->description; ?>">
     <meta name="author" content="LABFUTSAL">
     <?php echo $this->template->meta; ?>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/assets/css/bootstrap-theme.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/semantic/semantic.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
     <?php echo $this->template->stylesheet; ?>
 </head>
@@ -19,24 +18,63 @@
     echo $this->template->widget("navigation", array('title' => 'LABFUTSAL'));
 ?>
 
-<div class="container" style="margin-top: 60px;">
+<div class="ui main text container">
   <?php
     // This is the main content partial
     echo $this->template->content;
   ?>
 </div>
-<footer class="footer">
-  <div class="container">
-    <span class="text-muted">
-      <?php 
-        // Show the footer partial, and prepend copyright message
-        echo $this->template->footer->prepend("&copy; LABFUTSAL 2017 - ");
-      ?>    
-    </span>
-  </div>
-</footer>
-<script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+
+<!-- FOOTER -->
+<div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 1</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 2</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 3</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">Footer Header</h4>
+                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <img src="<?php echo base_url('assets/images/logo.png'); ?>" class="ui centered mini image">
+        <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Site Map</a>
+            <a class="item" href="#">Contact Us</a>
+            <a class="item" href="#">Terms and Conditions</a>
+            <a class="item" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+
+<script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/semantic/semantic.min.js'); ?>"></script>
 <?php echo $this->template->javascript; ?>
 
 </body>

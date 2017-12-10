@@ -1,20 +1,10 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo $title; ?></a>
-		</div>
-		<div id="navbar" class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<?php foreach($items as $item): ?>
-					<li><a href='<?php echo site_url($item); ?>'><?php echo $item; ?></a></li>
-				<?php endforeach; ?>
-			</ul>
-		</div>
+<div class="ui fixed inverted menu">
+	<div class="ui container">
+		<a href="<?php echo base_url(); ?>" class="header item">
+			<img class="logo" src="<?php echo base_url('assets/images/logo.png'); ?>">LABFUTSAL
+		</a>
+		<a href="<?php echo base_url(); ?>" class="item">Home</a>
+		<a href="<?php echo base_url('checkout'); ?>" class="item">Checkout</a>
+		<a href="<?php echo base_url('konfirmasi'); ?>" class="item">Konfirmasi</a>
 	</div>
-</nav>
+</div>
